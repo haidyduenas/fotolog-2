@@ -23,8 +23,8 @@ const app = {
     },
     listComments: function () {
         $('#home-comment').empty();
-        for (var clave in localStorage) {
-            var comentary = localStorage[clave];
+        for (let clave in localStorage) {
+            let comentary = localStorage[clave];
             $('#home-comment').append(`<div class="panel-body" id="comment"><h1> ${clave} </h1>
                             <h3>  ${comentary}</h3></div>`);
 
